@@ -5,19 +5,16 @@
 
 int main(int argc, char *argv[]) {
 	
-	int x, y, z;
-	float m;
-	int a, b, c;
-	x=2;
-	z=1; 
-	a=3;
-	b=4;
-	c=5;
+	int x, y;
 	
-	y = a*x*x + b*x + c;
-	m = (float)(x+y+x)/3;
-	
-	printf("y = %d, m = %f\n", y, m);
+	printf("정수를 두 개 입력하세요");
+	scanf("%i %i", &x, &y);
+
+	printf("+ result = %i\n", x+y);
+	printf("- result = %i\n", x-y);
+	printf("* result = %i\n", x*y);
+	printf("/ result = %i\n", x/y);
+	printf("%% result = %i\n", x%y);
 	
 	return 0;
 }
