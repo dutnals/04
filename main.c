@@ -5,16 +5,11 @@
 
 int main(int argc, char *argv[]) {
 	
-	int x, y;
+	int time;
 	
-	printf("정수를 두 개 입력하세요");
-	scanf("%i %i", &x, &y);
+	printf("초를 입력하세요");
+	scanf("%i", &time);
 
-	printf("+ result = %i\n", x+y);
-	printf("- result = %i\n", x-y);
-	printf("* result = %i\n", x*y);
-	printf("/ result = %i\n", x/y);
-	printf("%% result = %i\n", x%y);
-	
+	printf("입력하신 초는 %i분 %i초입니다.", time/60, time%60);
 	return 0;
 }
