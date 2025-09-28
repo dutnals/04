@@ -5,17 +5,11 @@
 
 int main(int argc, char *argv[]) {
 	
-	unsigned int x;
-	int b;
+	int time;
 	
-	printf("숫자를 입력하세요: ");
-	scanf("%ui", &x);
+	printf("초를 입력하세요");
+	scanf("%i", &time);
 
-	for (b=0; x!=0; x>>=1){
-		if(x&1)
-		b++;
-	}
-	
-	printf("결과는 %i\n", b);
-	return 0; 
+	printf("입력하신 초는 %i시 %i분 %i초입니다.", time/3600, (time%3600)/60, time%60);
+	return 0;
 }
