@@ -5,11 +5,17 @@
 
 int main(int argc, char *argv[]) {
 	
-	int year;
+	unsigned int x;
+	int b;
 	
-	printf("연도를 입력하세요");
-	scanf("%i", &year);
+	printf("숫자를 입력하세요: ");
+	scanf("%ui", &x);
 
-	printf("입력하신 연도 %i가 윤년일까요? 1이면 네, 0이면 아니요 %i\n", year,(year%4 == 0 && year%100 != 0) || (year%400 == 0));
+	for (b=0; x!=0; x>>=1){
+		if(x&1)
+		b++;
+	}
+	
+	printf("결과는 %i\n", b);
 	return 0; 
 }
